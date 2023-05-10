@@ -2,9 +2,6 @@ import pygame
 import numpy as np
 import matplotlib.pyplot as plt
 
-bg = pygame.image.load("bg.png")
-
-
 pygame.init()
 
 display_width = 920
@@ -21,9 +18,9 @@ blue = (0,0,255)
 
 clock = pygame.time.Clock()
 # adds game clock for game time
-carImg = pygame.image.load('newcar.png')
+carImg = pygame.image.load('carcarcar.png')
 
-bg = pygame.image.load('bg.png')
+bg = pygame.image.load('bg2.png')
 
 
 def car(x,y):
@@ -76,7 +73,7 @@ def game_loop():
             x_change = -5
             x += x_change
 
-        gameDisplay.fill(blue)
+
 
         gameDisplay.blit(bg, (0, 0))
 
